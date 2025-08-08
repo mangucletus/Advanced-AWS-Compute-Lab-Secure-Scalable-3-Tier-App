@@ -1,0 +1,19 @@
+# Terraform local state
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Provider plugins
+**/.terraform/providers/
+
+# Crash logs
+crash.log
+
+# Sensitive files
+*.tfvars
+*.tfvars.json
+
+# OS files
+.DS_Store
+Thumbs.db
