@@ -1,6 +1,4 @@
-# Advanced-AWS-Compute-Lab-Secure-Scalable-3-Tier-App
-
-# File Server Application - PERN Stack with AWS Deployment
+# Advanced-AWS-Compute-Lab-Secure-Scalable-3-Tier-App (File Server Application - PERN Stack)
 
 A secure, scalable three-tier file server application built with PostgreSQL, Express.js, React, and Node.js (PERN stack), featuring complete AWS deployment with Terraform.
 
