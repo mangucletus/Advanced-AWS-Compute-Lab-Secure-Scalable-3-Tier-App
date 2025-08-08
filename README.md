@@ -228,7 +228,7 @@ make clean           # Clean Docker resources
 make clean-all       # Clean everything
 ```
 
-## 🔐 Security Features
+##  Security Features
 
 ### Network Security
 - **VPC Isolation**: Custom VPC with public/private subnets
@@ -249,7 +249,7 @@ make clean-all       # Clean everything
 - **RDS Security**: Encrypted database in private subnet
 - **CloudWatch Monitoring**: Security event logging
 
-## 📊 Monitoring & Logging
+##  Monitoring & Logging
 
 ### CloudWatch Integration
 - **Custom Metrics**: CPU, memory, disk usage
@@ -262,7 +262,7 @@ make clean-all       # Clean everything
 - **Database Health**: Connection and query performance
 - **S3 Access**: File storage availability
 
-## 🔄 CI/CD Integration
+##  CI/CD Integration
 
 The application is ready for CI/CD integration with:
 
@@ -281,21 +281,8 @@ jobs:
       run: make deploy-aws
 ```
 
-### Jenkins Pipeline
-```groovy
-pipeline {
-    agent any
-    stages {
-        stage('Deploy') {
-            steps {
-                sh 'make deploy-aws'
-            }
-        }
-    }
-}
-```
 
-## 📝 Usage Guide
+##  Usage Guide
 
 ### For Administrators
 
@@ -330,7 +317,7 @@ GET /api/user          # Get current user info
 GET /health            # Health check
 ```
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -381,7 +368,7 @@ make logs-db
 aws logs tail /aws/ec2/app/fileserver --follow
 ```
 
-## 🚧 Production Considerations
+##  Production Considerations
 
 ### Before Going Live
 
@@ -400,7 +387,7 @@ aws logs tail /aws/ec2/app/fileserver --follow
 - **S3 Performance**: Use CloudFront CDN for better file delivery
 - **Monitoring**: Set up comprehensive alerting for production
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -408,11 +395,8 @@ aws logs tail /aws/ec2/app/fileserver --follow
 4. Add tests
 5. Submit a pull request
 
-## 📄 License
 
-This project is licensed under the MIT License. See LICENSE file for details.
-
-## 🆘 Support
+##  Support
 
 For support and questions:
 
@@ -423,19 +407,18 @@ For support and questions:
 
 ---
 
-## 🎯 Success Criteria Verification
+##  Success Criteria Verification
 
 This implementation meets all lab requirements:
 
-✅ **ALB Access**: Application accessible via ALB DNS name  
-✅ **Secure Communication**: Proper security groups and network isolation  
-✅ **S3 Integration**: Static assets and file storage via S3  
-✅ **CloudWatch**: Comprehensive logging and monitoring  
-✅ **No Direct Internet**: App tier and database in private subnets  
-✅ **Bastion Access**: SSH access only through bastion host  
-✅ **3-Tier Architecture**: Proper separation of web, app, and database tiers  
-✅ **Auto Scaling**: Configured with health checks and scaling policies  
-✅ **Infrastructure as Code**: Complete Terraform modules  
-✅ **Production Ready**: Docker, monitoring, security, and documentation
+ **ALB Access**: Application accessible via ALB DNS name  
+ **Secure Communication**: Proper security groups and network isolation  
+ **S3 Integration**: Static assets and file storage via S3  
+ **CloudWatch**: Comprehensive logging and monitoring  
+ **No Direct Internet**: App tier and database in private subnets  
+ **Bastion Access**: SSH access only through bastion host  
+ **3-Tier Architecture**: Proper separation of web, app, and database tiers  
+ **Auto Scaling**: Configured with health checks and scaling policies  
+ **Infrastructure as Code**: Complete Terraform modules  
+ **Production Ready**: Docker, monitoring, security, and documentation
 
-**Happy File Serving! 🚀**
